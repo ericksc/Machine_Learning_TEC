@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="altura_fruta <= 7.95\nsamples = 44\nvalue = [15, 4, 11, 14]\nclass = apple", fillcolor="#e5813908"] ;
+1 [label="ancho_fruta <= 7.35\nsamples = 28\nvalue = [15, 4, 7, 2]\nclass = apple", fillcolor="#e5813961"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="masa_fruta <= 101.0\nsamples = 16\nvalue = [3, 4, 7, 2]\nclass = orange", fillcolor="#399de540"] ;
+1 -> 2 ;
+3 [label="samples = 4\nvalue = [0, 4, 0, 0]\nclass = mandarin", fillcolor="#47e539ff"] ;
+2 -> 3 ;
+4 [label="samples = 12\nvalue = [3, 0, 7, 2]\nclass = orange", fillcolor="#399de571"] ;
+2 -> 4 ;
+5 [label="samples = 12\nvalue = [12, 0, 0, 0]\nclass = apple", fillcolor="#e58139ff"] ;
+1 -> 5 ;
+6 [label="masa_fruta <= 202.0\nsamples = 16\nvalue = [0, 0, 4, 12]\nclass = lemon", fillcolor="#d739e5aa"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="samples = 12\nvalue = [0, 0, 0, 12]\nclass = lemon", fillcolor="#d739e5ff"] ;
+6 -> 7 ;
+8 [label="samples = 4\nvalue = [0, 0, 4, 0]\nclass = orange", fillcolor="#399de5ff"] ;
+6 -> 8 ;
+}
